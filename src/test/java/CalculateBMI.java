@@ -19,6 +19,16 @@ public class CalculateBMI {
     }
 
     @Test
+
+/*      1. Открыть бразуер
+        2. Перейти по ссылке https://healthunify.com/bmicalculator/
+        3. В поле Weight ввести вес в килограммах, например 75
+        4. В поле Height ввести рост в сантиметрах, например 180
+        5. Нажать кнопку Calculate
+        6. Проверить, что появляется сообщение "Your category is Normal"
+
+ */
+
     public void Normal(){
         driver.get("https://healthunify.com/bmicalculator/");
         driver.findElement(By.name("wg")).sendKeys("75");
@@ -29,6 +39,16 @@ public class CalculateBMI {
     }
 
     @Test
+
+    /*  1. Открыть бразуер
+        2. Перейти по ссылке https://healthunify.com/bmicalculator/
+        3. В поле Weight ввести вес в килограммах, например 98
+        4. В поле Height ввести рост в сантиметрах, например 180
+        5. Нажать кнопку Calculate
+        6. Проверить, что появляется сообщение "Your category is Obese"
+
+ */
+
     public void Obese(){
         driver.get("https://healthunify.com/bmicalculator/");
         driver.findElement(By.name("wg")).sendKeys("98");
@@ -39,6 +59,16 @@ public class CalculateBMI {
     }
 
     @Test
+
+    /*  1. Открыть бразуер
+        2. Перейти по ссылке https://healthunify.com/bmicalculator/
+        3. В поле Weight ввести вес в килограммах, например 82
+        4. В поле Height ввести рост в сантиметрах, например 180
+        5. Нажать кнопку Calculate
+        6. Проверить, что появляется сообщение "Your category is Overweight"
+
+ */
+
     public  void Overweight(){
         driver.get("https://healthunify.com/bmicalculator/");
         driver.findElement(By.name("wg")).sendKeys("82");
@@ -49,6 +79,16 @@ public class CalculateBMI {
     }
 
     @Test
+
+    /*  1. Открыть бразуер
+        2. Перейти по ссылке https://healthunify.com/bmicalculator/
+        3. В поле Weight ввести вес в килограммах, например 45
+        4. В поле Height ввести рост в сантиметрах, например 180
+        5. Нажать кнопку Calculate
+        6. Проверить, что появляется сообщение "Your category is Starvation"
+
+ */
+
     public void Starvation(){
         driver.get("https://healthunify.com/bmicalculator/");
         driver.findElement(By.name("wg")).sendKeys("45");
